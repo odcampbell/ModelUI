@@ -3,6 +3,6 @@ __pycahce__/
 *.pyc
 
 # Ignore database files
-.bak
-.dat
-.dir
+*.bak
+*.dat
+*.dir
