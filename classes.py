@@ -15,7 +15,6 @@ class User:
         self.shortHand ="none"
 
     def updateUserName(self):
-        #works
         length = 20
         helper = 'w'
         while helper !='q':
@@ -227,7 +226,6 @@ class CPU:
 
 # Used to print out the name and amount of Users stored in User list by CPU
     def getUserList(self):
-        #works, prints users
         i=1
         for user in self.user_list:
             print(colored("User #{} is {}".format(i,user.name),"blue"))

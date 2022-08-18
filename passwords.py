@@ -54,7 +54,7 @@ def print_password_reqirements():
     print("4. The password must contain at least one special character (!, ?, *, #).")
     print("5. The password must be at least 8 characters in length.\n")
 
-#Function checks 5 requirements for password, credit to Swiss Codes
+#F unction checks 5 requirements for password, credit to Swiss Codes
 def validate(pw):
     
     passwordReqs = [r"[a-z]{1,}", r"[A-Z]{1,}", r"[0-9]{1,}", r"[\!\?\*\#]{1,}"]
@@ -79,10 +79,10 @@ def validate(pw):
         print("Unable to validate password.")
         return False
 
-#Takes in old and new potential passwords', validates new one and verifies it's what the user
-#intended to enter and allows user to restart by entering 'q', which will exit this funciton, returning 
+# Takes in old and new potential passwords', validates new one and verifies it's what the user
+# intended to enter and allows user to restart by entering 'q', which will exit this funciton, returning 
 # a false value and the original pw in a tuple, which then causes the updatePassword
-#function to grab another potential pw from the user, and then call this function again.
+# function to grab another potential pw from the user, and then call this function again.
 def verifyNewPassword(pw, newAttempt):
     validatedPw = validate(newAttempt)
     helper = 'q'
@@ -105,12 +105,12 @@ def verifyNewPassword(pw, newAttempt):
                 print(excpt)
     return validatedPw, pw
 
-
+# Takes a password parameter, makes sure entered password matches old one (for security purposes)
+# then asks for new password (using validate fucntion), if validated, it's checked twice
+# outer most loop checks old password matches security check, inner while loop validates
+# and verifies new password,
 def changePassword(pw):
-    # Takes a password parameter, makes sure entered password matches old one (for security purposes)
-    # then asks for new password (using validate fucntion), if validated, it's checked twice
-    #outer most loop checks old password matches security check, inner while loop validates
-    # and verifies new password,
+    
     print(colored("\n---- | Updating Password | ----\n", "red"))
 
     helper = 'q' # while loop value, only changes when new passwrod is set
@@ -138,10 +138,10 @@ def changePassword(pw):
             print("Does not match current password.")
     return pw
  
-#controls pasword set and update, currently returns nothing
-#calls all other pasword related functions
-#takes truth value in case password already exists
-#made this function so everything password related could have one hub
+# controls pasword set and update, currently returns nothing
+# calls all other pasword related functions
+# takes truth value in case password already exists
+# made this function so everything password related could have one hub
 def passwordManager(hasPassword,userPw):
    
     userPassword = userPw

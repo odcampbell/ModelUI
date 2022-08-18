@@ -9,9 +9,12 @@ from classes import CPU
 if __name__ == "__main__":
 
     cpu1 = CPU()
-    cpuOptions = 0 #1-3, 40 so program isnt easily exited by mistakenly pressing 4 
+    cpuOptions = 0 
     print(colored("Starting CPU! Here are your options!\n","blue"))
 
+# Whenever the code is run, see if there is storage to draw from
+# the function itself will handle the error if not and report no history detected
+# regardless, go on to the main menu TODO ... member function for main menu?
     try:
         cpu1.getStorage()
         
@@ -84,10 +87,9 @@ if __name__ == "__main__":
                     cpu1.printCpuMenu()
                     
                 elif cpuOptions == 6:
-                    cpu1.updateStorage()
+                    cpu1.updateStorage() #save any progress
                     print(colored("Powering off!","red")); sleep(1)
                     print(colored("Leaving Model UI program now.","red")) ;sleep(1)
-                    #cpu1.getStorage()
                         
             except ValueError:
                 print(colored("\nBe sure to enter an int.\n","red"))
