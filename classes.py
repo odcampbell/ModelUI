@@ -3,7 +3,7 @@ import getpass
 from passwords import passwordManager
 import shelve
 
-# These are the basic individual profiles that you can store on the computer
+# These are the basic individual profiles that you can store on the computer (CPU User List)
 class User:
     def __init__(self):
         self.name ='none'

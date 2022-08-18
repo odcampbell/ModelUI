@@ -1,10 +1,6 @@
 #!/usr/local/bin/python3
 # Citation: Adapted from @swisscoding on Instagram
-# I believe the last save had everything required, but this one should have better functionality
-#Goin to refactor this joint! Plan: use modules, make logic cleaner, use short cuts to looping, reduce uneccesary lines
-#make output cleaner, adapt to web page with backend for part 3 of this refactoring
-
-#Goals break into seperate files if possible for python 
+# Code for running UI
 
 from termcolor import colored
 from time import sleep

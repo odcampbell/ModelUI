@@ -3,7 +3,7 @@ import re
 import getpass
 
 #This module holds all of my password related functions,
-# Initially this project was only submitted in one long file
+# Initially, this project was only submitted in one long file
 # but I've recently tried to organize it some.
 #The next step may be adding them as class methods if that makes more sense
 
