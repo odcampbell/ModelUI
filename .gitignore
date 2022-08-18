@@ -1,0 +1,8 @@
+# Ignore cache files
+__pycahce__/
+*.pyc
+
+# Ignore database files
+.bak
+.dat
+.dir
