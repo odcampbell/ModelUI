@@ -54,7 +54,7 @@ def print_password_reqirements():
     print("4. The password must contain at least one special character (!, ?, *, #).")
     print("5. The password must be at least 8 characters in length.\n")
 
-#F unction checks 5 requirements for password, credit to Swiss Codes
+#Function checks 5 requirements for password, credit to Swiss Codes
 def validate(pw):
     
     passwordReqs = [r"[a-z]{1,}", r"[A-Z]{1,}", r"[0-9]{1,}", r"[\!\?\*\#]{1,}"]

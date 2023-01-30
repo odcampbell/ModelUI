@@ -23,7 +23,8 @@ if __name__ == "__main__":
         cpu1.printCpuMenu()
         while cpuOptions !=6:
             try: 
-                
+                #FIXME - could update storage here to save more things upon ctrl-c accidentally 
+                #see option 6 below for context 
                 cpuOptions = int(input("Enter 1, 2, 3, 4, 5 (print menu), or 6: "))
                 print()
 
@@ -87,7 +88,7 @@ if __name__ == "__main__":
                     cpu1.printCpuMenu()
                     
                 elif cpuOptions == 6:
-                    cpu1.updateStorage() #save any progress
+                    cpu1.updateStorage() #save any progress (but wont save anything done on ctrl-c)
                     print(colored("Powering off!","red")); sleep(1)
                     print(colored("Leaving Model UI program now.","red")) ;sleep(1)
                         
